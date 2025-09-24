@@ -1,0 +1,61 @@
+/* General nav links (except dropdown toggles) */
+.navbar-nav .nav-link {
+  font-size: 15px;
+  position: relative;
+  color: #0b2a45bb;
+  transition: color 0.3s ease;
+  padding-bottom: 5px; /* little space for underline */
+}
+.dropdown-item{
+  font-size: 15px;
+}
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+/* Create hidden underline */
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0b2a45;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect only for non-dropdown items */
+.navbar-nav .nav-link:not(.dropdown-toggle):hover {
+  color: #0b2a45;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+  transform: scaleX(1);
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* prevent dropdown "jump" */
+}
+
+/* Rotate arrow when hovered */
+.nav-item.dropdown:hover svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+/* Search & Sign in */
+.actions .btn-link {
+  color: #0b2a45;
+  text-decoration: none;
+}
+
+.actions .nav-link {
+  color: #0b2a45;
+}
+
+.actions .nav-link:hover {
+  color: #0b2a45;
+}

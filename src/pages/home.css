@@ -1,0 +1,256 @@
+/* General Section */
+.home-section {
+  background: #fff;
+  color: #333;
+}
+.blue-text{
+    color: #0b2a45;
+}
+.bg-blue{
+    background-color: #0b2a45;
+}
+/* Hero Section */
+.hero-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #0b1d39;
+}
+
+.hero-subtitle {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  background: #0b2a45;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #0b1d39d0;
+}
+
+/* Welcome Section */
+.welcome-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.welcome-subtitle {
+  font-weight: 600;
+  color: #555;
+}
+
+.welcome-text {
+  margin: 0 auto;
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+/* Reusable Dark Button */
+.primary-btn {
+  background: #0b1d39;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #152c54;
+}
+
+/* Section Styling */
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0b1d39;
+}
+
+.section-text {
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+/* === Testimonial Section === */
+.testimonial-section {
+  background-color: transparent;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #0b2a45;
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  max-width: 1200px;
+  flex: 1 1 auto;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Arrow Buttons */
+.testimonial-arrows {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 50px;
+  height: 50px;
+  min-width: 40px; /* Ensures it stays circular on small screens */
+  min-height: 40px;
+  border: 1px solid #0b2a45;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonial-arrows:hover {
+  background-color: #0b2a45;
+  color: white;
+}
+
+/* Blue text for heading */
+.blue-text {
+  color: #0b2a45;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-arrows {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-section {
+    text-align: center;
+  }
+
+  .testimonial-arrows {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+}
+
+/* === Recommended Section === */
+.recommended-section h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.recommended-section p {
+  font-size: 0.95rem;
+}
+
+/* === Card Styling === */
+.recommend-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 🔑 Make headings same height so <hr> aligns */
+.recommend-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-height: 48px; /* uniform heading space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+/* Consistent <hr> alignment */
+.recommend-card hr {
+  border: 0;
+  border-top: 1px solid #0b1d39;
+  margin: 0 0 1rem;
+}
+
+/* Uniform paragraph height for alignment */
+.recommend-card p {
+  font-size: 0.92rem;
+  color: #555;
+  min-height: 130px; /* makes text block equal height */
+  margin-bottom: 1.5rem;
+}
+
+/* Hover effect for floating look */
+.recommend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.view-btn {
+  background-color: #0b2a45;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0b1d39d0;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .recommend-card h5 {
+    min-height: auto;
+  }
+  .recommend-card p {
+    min-height: auto;
+  }
+}
+
+.tech-card {
+  background-color: #002b47;
+  border-radius: 12px;
+  min-height: 120px;
+  transition: transform 0.2s ease-in-out;
+}
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

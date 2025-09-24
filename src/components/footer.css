@@ -1,0 +1,112 @@
+.footer {
+  background-color: #0b2a45;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer .newsletter {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.footer .newsletter h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer .newsletter p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 360px;
+}
+
+.newsletter-form button {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #5a6268;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 30px;
+}
+
+.footer-section h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: #bebdbd;
+}
+
+.about .mission {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons i {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #bebdbd;
+}
+
+.email {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334e68;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d0d0d0;
+  text-align: center;
+}
