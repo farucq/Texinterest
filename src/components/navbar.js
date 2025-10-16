@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Search, LogIn , ChevronDown } from "lucide-react";
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -33,21 +34,21 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto gap-4 mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link fw-semibold" href="#">Home</a>
+                <Link className="nav-link fw-semibold" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-semibold" href="#">Companies</a>
+                <Link className="nav-link fw-semibold" to="/sb">Companies</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-semibold" href="#">Internship</a>
+                <Link className="nav-link fw-semibold" to="/sc">Internship</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle  fw-semibold" href="#" role="button">
                   Courses<ChevronDown size={16} />
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Course 1</a></li>
-                  <li><a className="dropdown-item" href="#">Course 2</a></li>
+                  <li><Link className="dropdown-item" to="/sb">Course 1</Link></li>
+                  <li><Link className="dropdown-item" to="/sc">Course 2</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -55,8 +56,8 @@ function Navbar() {
                   Interviews<ChevronDown size={16} />
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Interview 1</a></li>
-                  <li><a className="dropdown-item" href="#">Interview 2</a></li>
+                  <li><Link className="dropdown-item" to="/sc">Interview 1</Link></li>
+                  <li><Link className="dropdown-item" to="/sb">Interview 2</Link></li>
                 </ul>
               </li>
             </ul>
