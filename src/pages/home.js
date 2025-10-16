@@ -11,7 +11,7 @@ function Home() {
   return (
 
     <div>
-      <Nabar />
+      
 
       <section className="container-fluid px-5 text-center py-5">
         {/* Hero Heading */}
@@ -229,8 +229,8 @@ function Home() {
   </div>
 </section>
 
-      {/* Footer */}
-      <Footer />
+      
+      
     </div>
   );
 }
