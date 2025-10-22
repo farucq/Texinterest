@@ -6,8 +6,6 @@ import interview from './images/interview.png';
 import blog from './images/blog.png';
 import qa from './images/qa.png';
 
-
-
 function sb() {
   return (
     <div>
