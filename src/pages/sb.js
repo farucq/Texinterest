@@ -5,6 +5,8 @@ import quiz from './images/Quiz.png';
 import interview from './images/interview.png';
 import blog from './images/blog.png';
 import qa from './images/qa.png';
+import { Link } from 'react-router-dom';
+
 
 function sb() {
   return (
@@ -61,31 +63,48 @@ function sb() {
     </div>
   </div>
 </section>
-
-
-      {/* ===== Our Modules Section ===== */}
-      <section className="our-modules-section text-center py-3">
-        <div className="container">
-          <h2 className="section-heading mb-3">Our Modules</h2>
-          <div className="row justify-content-center">
-            {[
-              { title: "Holiday Management System", desc: "Employees are aware of upcoming holidays." },
-              { title: "Attendance Management System", desc: "Track employee attendance, punctuality, and daily check-ins using smart tools. Also provides leave management systems." },
-              { title: "Task Management Tool", desc: "Assign, track, and evaluate tasks and progress for better project results. Evaluate employee work progress." },
-              { title: "Work Management System", desc: "Tracking employees' daily activity reports." },
-            ].map((item, index) => (
-              <div className="col-lg-3 col-md-6 mb-3" key={index}>
-                <div className="module-card shadow-sm h-100 d-flex flex-column">
-                  <h5 className="module-title">{item.title}</h5>
-                  <hr className="divider mx-auto" />
-                  <p className="module-text flex-grow-1">{item.desc}</p>
-                  <button className="btn read-btn mt-auto">Read More</button>
-                </div>
-              </div>
-            ))}
+{/* ===== Our Modules Section ===== */}
+<section className="our-modules-section text-center py-3">
+  <div className="container">
+    <h2 className="section-heading mb-3">Our Modules</h2>
+    <div className="row justify-content-center">
+      {[
+        {
+          title: "Holiday Management System",
+          desc: "Employees are aware of upcoming holidays.",
+          link: "/holidaymanagement",
+        },
+        {
+          title: "Attendance Management System",
+          desc: "Track employee attendance, punctuality, and daily check-ins using smart tools. Also provides leave management systems.",
+          link: "/attendancemanagement",
+        },
+        {
+          title: "Task Management Tool",
+          desc: "Assign, track, and evaluate tasks and progress for better project results. Evaluate employee work progress.",
+          link: "/taskmanagement",
+        },
+        {
+          title: "Work Management System",
+          desc: "Tracking employees' daily activity reports.",
+          link: "/workmanagement",
+        },
+      ].map((item, index) => (
+        <div className="col-lg-3 col-md-6 mb-3" key={index}>
+          <div className="module-card shadow-sm h-100 d-flex flex-column">
+            <h5 className="module-title">{item.title}</h5>
+            <hr className="divider mx-auto" />
+            <p className="module-text flex-grow-1">{item.desc}</p>
+            {/* 🔹 Each button navigates to its own page */}
+            <Link to={item.link} className="btn read-btn mt-auto">
+              Read More
+            </Link>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
          {/* ===== Our Impact & Collaboration Section ===== */}
 <section className="impact-section container text-center py-5">
