@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Internship from './pages/sc';
 import Sb from './pages/sb';
 import HolidayManagement from './pages/Holiday Management';
-
+import Attendancemanagement from './pages/Attendancemanagement'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/sc" element={<Internship/>} />
         <Route path="/sb" element={<Sb />} />
         <Route path="/holidaymanagement" element={<HolidayManagement />} />
-
+        <Route path="/attendancemanagement" element={<Attendancemanagement />} />
       </Routes>
     </BrowserRouter>
     <Footer />

@@ -782,7 +782,7 @@
 /* Outer box */
 .contact-box {
   background: #ffffff;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #000000;
   border-radius: 12px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   max-width: 800px;   
@@ -831,4 +831,68 @@
   .contact-box {
     padding: 1.5rem;
   }
+}
+
+/* attendence management */
+
+.list-size {
+  list-style-type: disc; /* Keep round bullets */
+  padding-left: 1.5em;   /* Adjust indentation */
+  font-size: 1.4rem;    /* Increase font size for better readability */
+  line-height: 1.8;   /* Improve line spacing */
+}
+
+.list-size li::marker {
+  font-size: 1.6em;      /* Increase bullet size */
+  font-weight: bold;     /* Make bullet thicker */
+  color: #ffffff;        /* Optional: use your theme color */
+}
+.benefits-section {
+  background-color: #fff;
+}
+
+.benefit-box {
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.benefit-box:hover {
+  box-shadow: 0 px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.divider {
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #000000;
+  margin: 0.5rem 0 1rem;
+}
+
+.benefit-list li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 25px;
+  color: #333;
+}
+
+/* Checkmark style */
+.benefit-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Icon and text colors */
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-success {
+  color: #28a745 !important;
 }
